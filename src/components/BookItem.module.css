@@ -1,0 +1,6 @@
+.book_item {
+  display: flex;
+  flex-direction: column;
+  color: #4d83d9;
+  margin: 5px;
+}

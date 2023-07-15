@@ -1,17 +1,20 @@
 import PropTypes from 'prop-types';
+import styles from './BookItem.module.css';
 
 const BookItem = ({ books }) => (
   <>
-    <h3>{books.category}</h3>
-    <h2>{books.title}</h2>
-    <h3>{books.author}</h3>
-    <span>{books.comments}</span>
-    <button type="button">
-      <span>{books.remove}</span>
-    </button>
-    <button type="button">
-      <span>{books.edit}</span>
-    </button>
+    <div className={styles.book_item}>
+      <h3>{books.category}</h3>
+      <h2>{books.title}</h2>
+      <h3>{books.author}</h3>
+      <span>{books.comments}</span>
+      <button type="button">
+        <span>{books.remove}</span>
+      </button>
+      <button type="button">
+        <span>{books.edit}</span>
+      </button>
+    </div>
   </>
 );
 
