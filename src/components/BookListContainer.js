@@ -1,11 +1,12 @@
-import BookItem from "./BookItem";
-import { books } from "./Books";
+import BookItem from './BookItem';
+import books from './Items';
 
-const BookListContainer = () => {
-  return (
-    <>
-      {books.map((book) => (<BookItem books={book} />))}
-    </>
-  )
-}
+const BookListContainer = () => (
+  <>
+    {books.map((book) => (
+      <BookItem key={book.id} books={book} />
+    ))}
+  </>
+);
+
 export default BookListContainer;

@@ -15,12 +15,12 @@ const AddBookForm = () => {
 
   return (
     <>
-    <h2>ADD NEW BOOK</h2>
-    <form>
-      <input type="text" placeholder='Book Title' value={bookName} onChange={handleNameChange} />
-      <input type="text" placeholder='Author' value={authorName} onChange={handleAuthorChange} />
-      <button type="submit">ADD BOOK</button>
-    </form>    
+      <h2>ADD NEW BOOK</h2>
+      <form>
+        <input type="text" placeholder="Book Title" value={bookName} onChange={handleNameChange} />
+        <input type="text" placeholder="Author" value={authorName} onChange={handleAuthorChange} />
+        <button type="submit">ADD BOOK</button>
+      </form>
     </>
   );
 };
