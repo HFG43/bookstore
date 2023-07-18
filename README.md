@@ -31,7 +31,7 @@
 
 This project is about an app to follow up the completion and level of reading of a list of books, and having the possibility to add, edit and remove books by authorm category and title.
 
-**[Bookstore]** For this project, I will be using react and redux.
+**[Bookstore]** For this project, I will be using react and redux toolkit.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -72,6 +72,9 @@ This project is about an app to follow up the completion and level of reading of
 - **[Use of React Library]**
 - **[Components structure]**
 - **[Include form for new books]**
+- **[Install Redux Toolkit]**
+- **[Include add and remove book actions]**
+- **[Include category display status action]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -133,6 +136,7 @@ You can deploy this project using:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
+- **[Link actions to components]**
 - **[API for books detail]**
 - **[Add style using css -modules-]**
 - **[On Render deployment]**
