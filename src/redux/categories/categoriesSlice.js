@@ -7,10 +7,9 @@ const initialState = {
 export const categorySlice = createSlice({
   name: 'category',
   initialState,
+  message: 'Under Construction',
   reducers: {
-    selectCategory: (state) => {
-      state.value += 1;
-    },
+    selectCategory: (state) => state.message,
   },
 });
 
