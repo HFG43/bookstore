@@ -5,7 +5,6 @@ import { removeBook } from '../redux/books/bookSlice';
 import styles from './BookItem.module.css';
 
 const BookItem = ({ books }) => {
-  console.log(books);
   const dispatch = useDispatch();
 
   const handleRemoveBook = () => {
