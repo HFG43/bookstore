@@ -1,28 +1,32 @@
 import React from 'react';
-import { useSelector, useDispatch } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import PropTypes from 'prop-types';
 import { removeBook } from '../redux/books/bookSlice';
 import styles from './BookItem.module.css';
 
 const BookItem = ({ books }) => {
-  const remove = useSelector(removeBook);
+  console.log(books);
   const dispatch = useDispatch();
+
+  const handleRemoveBook = () => {
+    dispatch(removeBook(books.id));
+  };
+
   return (
     <>
       <div className={styles.book_item}>
         <h3>{books.category}</h3>
         <h2>{books.title}</h2>
         <h3>{books.author}</h3>
-        <span>{books.comments}</span>
+        <span>Comments</span>
         <button
           type="button"
-          aria-label="Remove Book"
-          onClick={() => dispatch(remove)}
+          onClick={handleRemoveBook}
         >
-          <span>{books.remove}</span>
+          <span>Remove</span>
         </button>
         <button type="button">
-          <span>{books.edit}</span>
+          <span>Edit</span>
         </button>
       </div>
     </>
@@ -31,13 +35,10 @@ const BookItem = ({ books }) => {
 
 BookItem.propTypes = {
   books: PropTypes.shape({
-    id: PropTypes.number.isRequired,
+    id: PropTypes.string.isRequired,
     category: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
-    comments: PropTypes.string.isRequired,
     author: PropTypes.string.isRequired,
-    remove: PropTypes.string.isRequired,
-    edit: PropTypes.string.isRequired,
   }).isRequired,
 };
 export default BookItem;
