@@ -1,24 +1,26 @@
-import { useState } from 'react';
-// import styles from './navbar.module.css';
+import { useDispatch } from 'react-redux';
+import { addBook } from '../redux/books/bookSlice';
 
 const AddBookForm = () => {
-  const [bookName, setBookName] = useState('');
-  const [authorName, setAuthorName] = useState('');
+  const dispatch = useDispatch();
 
-  const handleNameChange = (name) => {
-    setBookName(name.target.value);
-  };
-
-  const handleAuthorChange = (author) => {
-    setAuthorName(author.target.value);
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    const newBook = {
+      id: Date.now().toString(),
+      category: 'Fiction',
+      title: event.target.bookName.value,
+      author: event.target.authorName.value,
+    };
+    dispatch(addBook(newBook));
   };
 
   return (
     <>
       <h2>ADD NEW BOOK</h2>
-      <form>
-        <input type="text" placeholder="Book Title" value={bookName} onChange={handleNameChange} />
-        <input type="text" placeholder="Author" value={authorName} onChange={handleAuthorChange} />
+      <form onSubmit={handleSubmit}>
+        <input type="text" id="bookName" placeholder="Book Title" required />
+        <input type="text" placeholder="Author" id="authorName" required />
         <button type="submit">ADD BOOK</button>
       </form>
     </>
