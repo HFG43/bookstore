@@ -48,16 +48,6 @@ export const bookSlice = createSlice({
   name: 'books',
   initialState,
   reducers: {
-    // addBook: (state, action) => {
-    //   const addedBook = action.payload;
-    //   state.books.books = [...state.books.books, addedBook];
-    // },
-    // removeBook: (state, action) => {
-    //   const bookId = action.payload;
-    //   state.books.books = state.books.books.filter(
-    //     (book) => book.item_id !== bookId,
-    //   );
-    // },
   },
   extraReducers: (builder) => {
     builder
