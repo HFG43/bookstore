@@ -13,14 +13,26 @@ const AddBookForm = () => {
       author: event.target.authorName.value,
     };
     dispatch(postBook(newBook));
+    document.getElementById('bookName').value = '';
+    document.getElementById('authorName').value = '';
   };
 
   return (
     <>
       <h2>ADD NEW BOOK</h2>
       <form onSubmit={handleSubmit}>
-        <input type="text" id="bookName" placeholder="Book Title" required />
-        <input type="text" placeholder="Author" id="authorName" required />
+        <input
+          type="text"
+          id="bookName"
+          placeholder="Book Title"
+          required
+        />
+        <input
+          type="text"
+          placeholder="Author"
+          id="authorName"
+          required
+        />
         <button type="submit">ADD BOOK</button>
       </form>
     </>
