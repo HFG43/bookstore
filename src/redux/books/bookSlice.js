@@ -1,4 +1,6 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
+import { useEffect } from 'react';
+import { useDispatch } from 'react-redux';
 import axios from 'axios';
 
 export const getBooks = createAsyncThunk('book/getBooks', async () => {
@@ -11,6 +13,14 @@ export const getBooks = createAsyncThunk('book/getBooks', async () => {
     return 'There was an error, please try again';
   }
 });
+
+export const FetchBooks = () => {
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(getBooks());
+  }, [dispatch]);
+};
 
 export const postBook = createAsyncThunk('book/postBook', async (newBook) => {
   try {
@@ -47,8 +57,7 @@ const initialState = {
 export const bookSlice = createSlice({
   name: 'books',
   initialState,
-  reducers: {
-  },
+  reducers: {},
   extraReducers: (builder) => {
     builder
       .addCase(getBooks.pending, (state) => {
