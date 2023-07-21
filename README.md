@@ -76,6 +76,9 @@ This project is about an app to follow up the completion and level of reading of
 - **[Include add and remove book actions]**
 - **[Include category display status action]**
 - **[Include functionality to add and remove books]**
+- **[Use the Bookstore API]**
+- **[Install & use axios with createAsyncThunk]**
+- **[Refactor add and remove book]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -137,7 +140,6 @@ You can deploy this project using:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- **[API for books detail]**
 - **[Add style using css -modules-]**
 - **[On Render deployment]**
 - **[Component Tests]**
