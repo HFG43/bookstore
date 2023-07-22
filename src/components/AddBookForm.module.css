@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&family=Roboto+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800&display=swap');
+
+.add_section_container {
+  padding-top: 1.813rem;
+  border-top: 1px solid #e8e8e8;
+  margin: 0 3.36% 0 3.36%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 2.31rem;
+}
+
+.add_section_container h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.25rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.18px;
+  color: #888;
+  margin-bottom: 1.188rem;
+}
+
+.form_container {
+  margin-bottom: 10%;
+}
+
+.form_book_author::placeholder,
+.form_book_title::placeholder {
+  color: #c4c4c4;
+}
+
+.form_book_author,
+.form_book_title {
+  margin-right: 2.5%;
+  height: 2.813rem;
+  margin-bottom: 0.5rem;
+  outline: none;
+  border: 1px solid #e8e8e8;
+  color: #c4c4c4;
+  padding-left: 1.063rem;
+}
+
+.form_book_title {
+  width: 55.33%;
+}
+
+.form_book_author {
+  width: 23.75%;
+}
+
+.form_container button {
+  margin-bottom: 0.5rem;
+  font-family: "RobotoSlab", sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  font-weight: 300;
+  font-size: 0.813rem;
+  height: 2.813rem;
+  width: 10.93rem;
+  letter-spacing: 0.5px;
+  text-align: center;
+  color: #fff;
+  background-color: #0290ff;
+  padding: 0.438rem 1.188rem 0.5rem 1.375rem;
+  border-radius: 3px;
+  border: none;
+}

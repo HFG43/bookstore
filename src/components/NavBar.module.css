@@ -1,4 +1,66 @@
 .navbar {
+  margin: 5% 6.25% 0 6.25%;
+  height: 6.6254%;
+  list-style: none;
   display: flex;
-  flex-direction: column;
+  font-family: "Montserrat", sans-serif;
+  align-items: center;
+  border-bottom: 1px solid #e8e8e8;
+  background-color: #fff;
+  justify-content: space-between;
+}
+
+.navbar_list_container {
+  margin-left: 3.36%;
+  display: flex;
+  align-items: center;
+}
+
+.navbar h1,
+.navbar ul li {
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+}
+
+.navbar h1 {
+  margin: 1.8rem 2.938rem 1.8rem 0;
+  font-size: 1.875rem;
+  font-weight: bold;
+  letter-spacing: normal;
+  color: #0290ff;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+}
+
+.navbar ul li {
+  font-size: 0.813rem;
+  font-weight: normal;
+  letter-spacing: 1.9px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #121212;
+  margin-right: 2.56rem;
+}
+
+.navbar ul li:nth-child(2) {
+  opacity: 0.5;
+}
+
+.icon_container {
+  border: 1px solid #e8e8e8;
+  margin-right: 3.36%;
+  height: 2.81rem;
+  width: 2.81rem;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+.navbar_user_icon_circle {
+  height: 1.35rem;
 }

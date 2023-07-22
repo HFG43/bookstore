@@ -1,6 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&family=Roboto+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .book_item {
   display: flex;
-  flex-direction: column;
   color: #4d83d9;
-  margin: 5px;
+  border-radius: 4px;
+  border: solid 1px #e8e8e8;
+  background-color: #fff;
+  margin-left: 3.36%;
+  margin-right: 3.36%;
+  margin-bottom: 0.938rem;
+}
+
+.book_item_primary_data_container {
+  margin-left: 1.688rem;
+  width: 46.58%;
+}
+
+.book_item_primary_data_title,
+.book_item_primary_data_category,
+.book_item_primary_data_author,
+.book_item_complementary_buttons_container span,
+.book_item_complementary_buttons_container button,
+.percentage_number,
+.percentage_completed,
+.current_chapter_container h3,
+.current_chapter_container h2,
+.current_chapter_container div {
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+}
+
+.book_item_primary_data_category {
+  margin-top: 2rem;
+  margin-bottom: 0.25rem;
+  opacity: 0.5;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.875rem;
+  font-weight: bold;
+  letter-spacing: normal;
+  color: #121212;
+}
+
+.book_item_primary_data_title {
+  font-family: "RobotoSlab", sans-serif;
+  font-size: 1.375rem;
+  font-weight: bold;
+  letter-spacing: -0.2px;
+  color: #121212;
+}
+
+.book_item_primary_data_author {
+  font-family: "RobotoSlab", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 300;
+  letter-spacing: normal;
+  color: #4386bf;
+}
+
+.book_item_complementary_buttons_container {
+  margin-top: 1.313rem;
+  margin-bottom: 1.75rem;
+}
+
+.book_item_complementary_buttons_container span {
+  margin-right: 1.063rem;
+  font-family: "RobotoSlab", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 300;
+  letter-spacing: normal;
+  color: #4386bf;
+}
+
+.book_item_complementary_buttons_container i {
+  height: 1.5rem;
+  width: 0.125rem;
+  margin-right: 1.063rem;
+  color: #e8e8e8;
+}
+
+.remove {
+  margin-right: 0.6rem;
+}
+
+.edit {
+  margin-left: -0.5rem;
+}
+
+.book_item_complementary_buttons_container button {
+  background-color: #fff;
+  border: none;
+  font-family: "RobotoSlab", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 300;
+  letter-spacing: normal;
+  color: #4386bf;
+}
+
+.percentage_container {
+  width: 14.25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 0.91%;
+}
+
+.percentage_number {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  font-weight: normal;
+  letter-spacing: normal;
+  color: #121212;
+  display: flex;
+}
+
+.percentage_completed {
+  opacity: 0.5;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.875rem;
+  font-weight: normal;
+  letter-spacing: normal;
+  color: #121212;
+}
+
+.advance_graph_container {
+  width: 5.625rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circular_chart {
+  display: block;
+  margin: 10px auto;
+  max-width: 80%;
+  max-height: 250px;
+}
+
+.circle {
+  stroke: #0290ff;
+  fill: none;
+  stroke-width: 2.8;
+  stroke-linecap: round;
+  animation: progress 2s ease-out forwards;
+}
+
+.circle_background {
+  fill: none;
+  stroke: #e8e8e8;
+  stroke-width: 3.8;
+}
+
+@keyframes progress {
+  0% {
+    stroke-dasharray: 0 100;
+  }
+}
+
+.divisor_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.divisor {
+  width: 0.125rem;
+  height: 4.375rem;
+  border: solid 1px #e8e8e8;
+}
+
+.current_chapter_container {
+  width: 32.5%;
+  padding-left: 4.91%;
+}
+
+.current_chapter_container h3 {
+  opacity: 0.5;
+  letter-spacing: normal;
+  color: #121212;
+  font-size: 0.813rem;
+  margin-top: 2.63rem;
+  margin-bottom: 0.438rem;
+  font-family: "RobotoSlab", sans-serif;
+  font-weight: 300;
+}
+
+.current_chapter_container h2 {
+  letter-spacing: -0.4px;
+  color: #121212;
+  font-size: 1rem;
+  font-family: "RobotoSlab", sans-serif;
+  font-weight: 300;
+}
+
+.current_chapter_container div {
+  font-family: "RobotoSlab", sans-serif;
+  font-weight: 300;
+  font-size: 0.813rem;
+  width: 11.5rem;
+  letter-spacing: 0.5px;
+  text-align: center;
+  color: #fff;
+  background-color: #0290ff;
+  padding: 0.438rem 1.188rem 0.5rem 1.375rem;
+  border-radius: 3px;
+  margin-top: 1.438rem;
 }

@@ -79,6 +79,7 @@ This project is about an app to follow up the completion and level of reading of
 - **[Use the Bookstore API]**
 - **[Install & use axios with createAsyncThunk]**
 - **[Refactor add and remove book]**
+- **[Add style using Modules]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -140,7 +141,6 @@ You can deploy this project using:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- **[Add style using css -modules-]**
 - **[On Render deployment]**
 - **[Component Tests]**
 
@@ -162,7 +162,7 @@ If you like this project, please Star it!
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I will like to thank Microverse and their Code Reviewers!!
+I will like to thank Microverse and their Code Reviewers, and I will also like to thank Sergio Pedercini for his article "How to code a responsive circular percentage chart with SVG and CSS (https://medium.com/@pppped/how-to-code-a-responsive-circular-percentage-chart-with-svg-and-css-3632f8cd7705)! It was really helpfull!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
