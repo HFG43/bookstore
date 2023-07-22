@@ -42,9 +42,9 @@
   margin-top: 2rem;
   margin-bottom: 0.25rem;
   opacity: 0.5;
-  font-family: Montserrat;
+  font-family: "Montserrat", sans-serif;
   font-size: 0.875rem;
-  font-weight: bold; 
+  font-weight: bold;
   letter-spacing: normal;
   color: #121212;
 }
