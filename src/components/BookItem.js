@@ -12,16 +12,42 @@ const BookItem = ({ books }) => {
   return (
     <>
       <div className={styles.book_item}>
-        <h3>{books.category}</h3>
-        <h2>{books.title}</h2>
-        <h3>{books.author}</h3>
-        <span>Comments</span>
-        <button type="button" onClick={handleRemoveBook}>
-          <span>Remove</span>
-        </button>
-        <button type="button">
-          <span>Edit</span>
-        </button>
+        <div className={styles.book_item_primary_data_container}>
+          <div className={styles.book_item_primary_data}>
+            <h3 className={styles.book_item_primary_data_category}>{books.category}</h3>
+            <h2 className={styles.book_item_primary_data_title}>{books.title}</h2>
+            <h3 className={styles.book_item_primary_data_author}>{books.author}</h3>
+          </div>
+          <div className={styles.book_item_complementary_buttons_container}>
+            <span>Comments</span>
+            <i>|</i>
+            <button type="button" onClick={handleRemoveBook}>
+              <span>Remove</span>
+            </button>
+            <i>|</i>
+            <button type="button">
+              <span>Edit</span>
+            </button>
+          </div>
+        </div>
+        <div className={styles.advance_graph}>
+          <img src="#" alt="advance reading graphic" />
+        </div>
+        <div className={styles.percentage_container}>
+          <div className={styles.percentage_number}>
+            <p>{Math.floor(Math.random() * 99) + 1}</p>
+            <span>%</span>
+          </div>
+          <span className={styles.percentage_completed}>Completed</span>
+        </div>
+        <div className={styles.divisor_container}>
+          <div className={styles.divisor} />
+        </div>
+        <div className={styles.current_chapter_container}>
+          <h3>CURRENT CHAPTER</h3>
+          <h2>Chapter 15</h2>
+          <div>UPDATE PROGRESS</div>
+        </div>
       </div>
     </>
   );

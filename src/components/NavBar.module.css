@@ -1,4 +1,50 @@
 .navbar {
+  margin: 5% 6.25% 0 6.25%;
+  height: 6.6254%;
+  list-style: none;
   display: flex;
-  flex-direction: column;
+  font-family: "Montserrat", sans-serif;
+  align-items: center;
+  border: green 1px solid;
+  border-bottom: 1px solid #e8e8e8;
+  background-color: #fff;
+}
+
+.navbar h1 {
+  margin: 1.8rem 7.14% 1.8rem 3.36%;
+  font-size: 1.875rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #0290ff;
+}
+
+.navbar_books {
+  margin-rigth: 50px;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+}
+
+.navbar ul li {
+  font-size: 0.813rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1.9px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #121212;
+  margin-right: 2.56rem;
+}
+
+.navbar_user_icon {
+
 }

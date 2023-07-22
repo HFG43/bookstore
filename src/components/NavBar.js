@@ -14,7 +14,7 @@ const NavBar = () => (
         </li>
       </ul>
       <span>
-        <img alt="User Icon" src="#" />
+        <img className={styles.navbar_user_icon} alt="User Icon" src="#" />
       </span>
     </div>
   </>
