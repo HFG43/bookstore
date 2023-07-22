@@ -27,11 +27,11 @@ const BookItem = ({ books }) => {
           <div className={styles.book_item_complementary_buttons_container}>
             <span>Comments</span>
             <i>|</i>
-            <button type="button" onClick={handleRemoveBook}>
+            <button className={styles.remove} type="button" onClick={handleRemoveBook}>
               <span>Remove</span>
             </button>
             <i>|</i>
-            <button type="button">
+            <button className={styles.edit} type="button">
               <span>Edit</span>
             </button>
           </div>
