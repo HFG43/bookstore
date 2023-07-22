@@ -1,9 +1,12 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <!-- Uploaded to: SVG Repo, www.svgrepo.com, Transformed by: SVG Repo Mixer Tools -->
-<svg height="64px" width="64px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-6.07 -6.07 72.81 72.81" xml:space="preserve" fill="" stroke="">
-<g id="SVGRepo_bgCarrier" stroke-width="0" transform="translate(0,0), scale(1)">
-<rect x="-6.07" y="-6.07" width="72.81" height="72.81" rx="36.405" fill="#ffffff" strokewidth="0"/>
+<svg width="64px" height="64px" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" fill="#e8e8e8" stroke="#e8e8e8">
+<g id="SVGRepo_bgCarrier" stroke-width="0"/>
+<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+<g id="SVGRepo_iconCarrier">
+<defs>
+<style>.a{fill:none;stroke:#e8e8e8;stroke-linecap:round;stroke-linejoin:round;}</style>
+</defs>
+<circle class="a" cx="24" cy="24" r="21.5"/>
 </g>
-<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="0.24268399999999998"/>
-<g id="SVGRepo_iconCarrier"> <g> <g> <ellipse style="fill:#0290ff;" cx="30.336" cy="12.097" rx="11.997" ry="12.097"/> <path style="fill:#0290ff;" d="M35.64,30.079H25.031c-7.021,0-12.714,5.739-12.714,12.821v17.771h36.037V42.9 C48.354,35.818,42.661,30.079,35.64,30.079z"/> </g> </g> </g>
 </svg>

@@ -53,10 +53,14 @@
 }
 
 .icon_container {
-  border: 1px solid orange;
-  margin-right: 3.36%;  
+  border: 1px solid #e8e8e8;
+  margin-right: 3.36%;
+  height: 2.81rem;
+  width: 2.81rem;
+  background-color: #fff;
+  border-radius: 50%;
 }
 
-.navbar_user_icon {
-  height: 1.063rem;
+.navbar_user_icon_circle {
+  height: 1.35rem;
 }

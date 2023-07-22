@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import styles from './NavBar.module.css';
-import userLogo from './Assets/User_Icon.svg';
+import userCircle from './Assets/userLogo.svg';
 
 const NavBar = () => (
   <>
@@ -16,11 +16,9 @@ const NavBar = () => (
           </li>
         </ul>
       </div>
-      <div className={styles.icon_container}>
-        <span>
-          <img className={styles.navbar_user_icon} alt="User Icon" src={userLogo} />
-        </span>
-      </div>
+      <button type="button" className={styles.icon_container}>
+        <img className={styles.navbar_user_icon_circle} alt="User Icon" src={userCircle} />
+      </button>
     </div>
   </>
 );
