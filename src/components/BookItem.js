@@ -14,9 +14,15 @@ const BookItem = ({ books }) => {
       <div className={styles.book_item}>
         <div className={styles.book_item_primary_data_container}>
           <div className={styles.book_item_primary_data}>
-            <h3 className={styles.book_item_primary_data_category}>{books.category}</h3>
-            <h2 className={styles.book_item_primary_data_title}>{books.title}</h2>
-            <h3 className={styles.book_item_primary_data_author}>{books.author}</h3>
+            <h3 className={styles.book_item_primary_data_category}>
+              {books.category}
+            </h3>
+            <h2 className={styles.book_item_primary_data_title}>
+              {books.title}
+            </h2>
+            <h3 className={styles.book_item_primary_data_author}>
+              {books.author}
+            </h3>
           </div>
           <div className={styles.book_item_complementary_buttons_container}>
             <span>Comments</span>
@@ -30,8 +36,22 @@ const BookItem = ({ books }) => {
             </button>
           </div>
         </div>
-        <div className={styles.advance_graph}>
-          <img src="#" alt="advance reading graphic" />
+        <div className={styles.advance_graph_container}>
+          <svg viewBox="0 0 36 36" className={styles.circular_chart}>
+            <path
+              className={styles.circle_background}
+              d="M18 2.0845
+            a 15.9155 15.9155 0 0 1 0 31.831
+            a 15.9155 15.9155 0 0 1 0 -31.831"
+            />
+            <path
+              className={styles.circle}
+              strokeDasharray="70, 100"
+              d="M18 2.0845
+            a 15.9155 15.9155 0 0 1 0 31.831
+            a 15.9155 15.9155 0 0 1 0 -31.831"
+            />
+          </svg>
         </div>
         <div className={styles.percentage_container}>
           <div className={styles.percentage_number}>

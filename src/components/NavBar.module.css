@@ -5,24 +5,30 @@
   display: flex;
   font-family: "Montserrat", sans-serif;
   align-items: center;
-  border: green 1px solid;
   border-bottom: 1px solid #e8e8e8;
   background-color: #fff;
+  justify-content: space-between;
 }
 
-.navbar h1 {
-  margin: 1.8rem 7.14% 1.8rem 3.36%;
-  font-size: 1.875rem;
-  font-weight: bold;
+.navbar_list_container {
+  margin-left: 3.36%;
+  display: flex;
+  align-items: center;
+}
+
+.navbar h1,
+.navbar ul li {
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
-  letter-spacing: normal;
-  color: #0290ff;
 }
 
-.navbar_books {
-  margin-rigth: 50px;
+.navbar h1 {
+  margin: 1.8rem 2.938rem 1.8rem 0;
+  font-size: 1.875rem;
+  font-weight: bold;
+  letter-spacing: normal;
+  color: #0290ff;
 }
 
 .navbar ul {
@@ -33,9 +39,6 @@
 .navbar ul li {
   font-size: 0.813rem;
   font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
   letter-spacing: 1.9px;
 }
 
@@ -45,6 +48,15 @@
   margin-right: 2.56rem;
 }
 
-.navbar_user_icon {
+.navbar ul li:nth-child(2) {
+  opacity: 0.5;
+}
 
+.icon_container {
+  border: 1px solid orange;
+  margin-right: 3.36%;  
+}
+
+.navbar_user_icon {
+  height: 1.063rem;
 }

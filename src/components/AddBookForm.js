@@ -1,5 +1,6 @@
 import { useDispatch } from 'react-redux';
 import { postBook } from '../redux/books/bookSlice';
+import styles from './AddBookForm.module.css';
 
 const AddBookForm = () => {
   const dispatch = useDispatch();
@@ -19,22 +20,22 @@ const AddBookForm = () => {
 
   return (
     <>
-      <h2>ADD NEW BOOK</h2>
-      <form onSubmit={handleSubmit}>
-        <input
-          type="text"
-          id="bookName"
-          placeholder="Book Title"
-          required
-        />
-        <input
-          type="text"
-          placeholder="Author"
-          id="authorName"
-          required
-        />
-        <button type="submit">ADD BOOK</button>
-      </form>
+      <div className={styles.add_section_container}>
+        <h2>ADD NEW BOOK</h2>
+        <div className={styles.form_container}>
+          <form onSubmit={handleSubmit}>
+            <input
+              className={styles.form_book_title}
+              type="text"
+              id="bookName"
+              placeholder="Book Title"
+              required
+            />
+            <input className={styles.form_book_author} type="text" placeholder="Author" id="authorName" required />
+            <button type="submit">ADD BOOK</button>
+          </form>
+        </div>
+      </div>
     </>
   );
 };
